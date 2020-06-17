@@ -1,6 +1,12 @@
 # aws-emr-auto-resize-ebs-bootstrap
 EMR bootstrap Script to auto-resize EMR volumes
 
+##Author
+Curtis Oden - Email: coden@ata-llc.com | Web: ata-llc.com
+
+## Repo home
+https://github.com/curtisoden/aws-emr-auto-resize-ebs-bootstrap
+
 ##Background
 
 This repo was originally forked from Forked from https://github.com/andr-t/aws-emr-resize_storage_nvme, which is based off of the code referenced in the AWS Big Data Blog article "Dynamically scale up storage on Amazon EMR clusters" (https://aws.amazon.com/blogs/big-data/dynamically-scale-up-storage-on-amazon-emr-clusters/). Unfortunately, the S3 reference in the article (s3://aws-bigdata-blog/artifacts/resize_storage/resize_storage.sh) does not seem to work.
