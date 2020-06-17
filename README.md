@@ -3,7 +3,9 @@ EMR bootstrap Script to auto-resize EMR volumes
 
 ##Background
 
-This repo was originally forked from https://aws.amazon.com/blogs/big-data/dynamically-scale-up-storage-on-amazon-emr-clusters/, which is based off of the code referenced in the AWS Big Data Blog article "Dynamically scale up storage on Amazon EMR clusters" (https://aws.amazon.com/blogs/big-data/dynamically-scale-up-storage-on-amazon-emr-clusters/). Unfortunately, the S3 reference in the article (s3://aws-bigdata-blog/artifacts/resize_storage/resize_storage.sh) does not seem to work.
+This repo was originally forked from Forked from https://github.com/andr-t/aws-emr-resize_storage_nvme, which is based off of the code referenced in the AWS Big Data Blog article "Dynamically scale up storage on Amazon EMR clusters" (https://aws.amazon.com/blogs/big-data/dynamically-scale-up-storage-on-amazon-emr-clusters/). Unfortunately, the S3 reference in the article (s3://aws-bigdata-blog/artifacts/resize_storage/resize_storage.sh) does not seem to work.
+
+This repo includes andr-t's enhancement to support nvme volumes, which are used in AWS latest instance classes.
 
 To use this script, upload resize_storage.sh to an S3 bucket to which your EMR cluster has appropriate IAM S3 policies to access. 
 
